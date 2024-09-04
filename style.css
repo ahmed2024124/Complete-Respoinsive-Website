@@ -1,0 +1,122 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    background: url(Images/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Header Style */
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3c3c3c;
+    padding: 15px;
+}
+header .logo
+{
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+header .links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 5px;
+}
+header .links a
+{
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+header .links a:hover
+{
+    opacity: 1;
+}
+/* Content Style */
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.content h2
+{
+    color: #fff;
+    font-size: 3.5em;
+}
+.content p
+{
+    color: #fff;
+    margin-top: 10px;
+}
+.content button
+{
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s ease;
+}
+.content button:hover
+{
+    color: #fff;
+    background: #00000075;
+    outline: 1px solid #fff;
+    padding: 10px 30px;
+}
+
+/* Respoinsive */
+@media (width < 960px) {
+    .content h2
+    {
+        font-size: 2.5em;
+    }
+}
+@media (width < 797px) {
+    .content h2
+    {
+        font-size: 1.8em;
+    }
+}
+@media (width < 549px) {
+    .content h2
+    {
+        font-size: 1.2em;
+    }
+    .content p
+    {
+        font-size: 13px;
+    }
+}
+@media (width < 415px) {
+    header .links
+    {
+        display: none;
+    }
+}
